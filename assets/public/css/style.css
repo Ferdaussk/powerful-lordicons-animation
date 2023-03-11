@@ -1,0 +1,10 @@
+
+.elementor-element.elementor-widget-empty:has(.plordiconsa-lordicons-animation){
+  background-color: transparent !important;
+}
+.elementor-element.elementor-widget-empty .plordiconsa-effective-icon{
+display: none !important;
+}
+.plordiconsa-lordicons-animation {
+  margin-bottom: -9px !important;
+}
