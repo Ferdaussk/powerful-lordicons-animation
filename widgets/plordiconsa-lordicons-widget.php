@@ -29,18 +29,18 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->start_controls_section(
 			'plordiconsa_section_general_settings',
 			array(
-				'label' => __( 'General Settings', 'powerful-lordicons-animation' ),
+				'label' => esc_html__( 'General Settings', 'powerful-lordicons-animation' ),
 			)
 		);
 
 		$this->add_control(
 			'plordiconsa_source',
 			array(
-				'label'   => __( 'File Source', 'powerful-lordicons-animation' ),
+				'label'   => esc_html__( 'File Source', 'powerful-lordicons-animation' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => array(
-					'url'  => __( 'External URL', 'powerful-lordicons-animation' ),
-					'file' => __( 'Media File', 'powerful-lordicons-animation' ),
+					'url'  => esc_html__( 'External URL', 'powerful-lordicons-animation' ),
+					'file' => esc_html__( 'Media File', 'powerful-lordicons-animation' ),
 				),
 				'default' => 'url',
 			)
@@ -49,7 +49,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_url',
 			array(
-				'label'       => __( 'Animation JSON URL', 'powerful-lordicons-animation' ),
+				'label'       => esc_html__( 'Animation JSON URL', 'powerful-lordicons-animation' ),
 				'type'        => Controls_Manager::TEXT,
 				'dynamic'     => array( 'active' => true ),
 				'default' 		=> 'https://cdn.lordicon.com/vixtkkbk.json',
@@ -64,7 +64,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_file',
 			array(
-				'label'              => __( 'Upload JSON File', 'powerful-lordicons-animation' ),
+				'label'              => esc_html__( 'Upload JSON File', 'powerful-lordicons-animation' ),
 				'type'               => Controls_Manager::MEDIA,
 				'media_type'         => 'application/json',
 				'frontend_available' => true,
@@ -77,7 +77,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_loop',
 			array(
-				'label'        => __( 'Loop', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Loop', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'default'      => 'true',
@@ -87,7 +87,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_reverse',
 			array(
-				'label'        => __( 'Reverse', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Reverse', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 			)
@@ -96,7 +96,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_speed',
 			array(
-				'label'   => __( 'Animation Speed', 'powerful-lordicons-animation' ),
+				'label'   => esc_html__( 'Animation Speed', 'powerful-lordicons-animation' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 1,
 				'min'     => 0.1,
@@ -108,13 +108,13 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_trigger',
 			array(
-				'label' => __( 'Trigger', 'powerful-lordicons-animation' ),
+				'label' => esc_html__( 'Trigger', 'powerful-lordicons-animation' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => array(
-					'none' => __( 'None', 'powerful-lordicons-animation' ),
-					'hover' => __( 'Hover', 'powerful-lordicons-animation' ),
-					'scroll' => __( 'Scroll', 'powerful-lordicons-animation' ),
+					'none' => esc_html__( 'None', 'powerful-lordicons-animation' ),
+					'hover' => esc_html__( 'Hover', 'powerful-lordicons-animation' ),
+					'scroll' => esc_html__( 'Scroll', 'powerful-lordicons-animation' ),
 				),
 				'frontend_available' => true,
 			)
@@ -123,7 +123,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_hover_leave_reverse',
 			array(
-				'label'        => __( 'Reset on Mouse Leave', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Reset on Mouse Leave', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'true',
 				'condition'    => array(
@@ -136,7 +136,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_hover',
 			array(
-				'label'        => __( 'Play on Hover', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Play on Hover', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::HIDDEN,
 				'return_value' => 'true',
 			)
@@ -145,7 +145,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_animate_on_scroll',
 			array(
-				'label'        => __( 'Play On Scroll', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Play On Scroll', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::HIDDEN,
 				'return_value' => 'true',
 			)
@@ -154,7 +154,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_animate_speed',
 			array(
-				'label'     => __( 'Speed', 'powerful-lordicons-animation' ),
+				'label'     => esc_html__( 'Speed', 'powerful-lordicons-animation' ),
 				'type'      => Controls_Manager::SLIDER,
 				'default'   => array(
 					'size' => 4,
@@ -175,7 +175,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_animate_view',
 			array(
-				'label'     => __( 'Viewport', 'powerful-lordicons-animation' ),
+				'label'     => esc_html__( 'Viewport', 'powerful-lordicons-animation' ),
 				'type'      => Controls_Manager::SLIDER,
 				'default'   => array(
 					'sizes' => array(
@@ -200,7 +200,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_responsive_control(
 			'plordiconsa_animation_size',
 			array(
-				'label'      => __( 'Size', 'powerful-lordicons-animation' ),
+				'label'      => esc_html__( 'Size', 'powerful-lordicons-animation' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', 'em', '%' ),
 				'default'    => array(
@@ -227,9 +227,9 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_responsive_control(
 			'plordiconsa_lordicons_rotate',
 			array(
-				'label'       => __( 'Rotate (degrees)', 'powerful-lordicons-animation' ),
+				'label'       => esc_html__( 'Rotate (degrees)', 'powerful-lordicons-animation' ),
 				'type'        => Controls_Manager::SLIDER,
-				'description' => __( 'Set rotation value in degrees', 'powerful-lordicons-animation' ),
+				'description' => esc_html__( 'Set rotation value in degrees', 'powerful-lordicons-animation' ),
 				'range'       => array(
 					'px' => array(
 						'min' => -180,
@@ -248,19 +248,19 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_responsive_control(
 			'plordiconsa_animation_align',
 			array(
-				'label'     => __( 'Alignment', 'powerful-lordicons-animation' ),
+				'label'     => esc_html__( 'Alignment', 'powerful-lordicons-animation' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => array(
 					'left'   => array(
-						'title' => __( 'Left', 'powerful-lordicons-animation' ),
+						'title' => esc_html__( 'Left', 'powerful-lordicons-animation' ),
 						'icon'  => 'eicon-text-align-left',
 					),
 					'center' => array(
-						'title' => __( 'Center', 'powerful-lordicons-animation' ),
+						'title' => esc_html__( 'Center', 'powerful-lordicons-animation' ),
 						'icon'  => 'eicon-text-align-center',
 					),
 					'right'  => array(
-						'title' => __( 'Right', 'powerful-lordicons-animation' ),
+						'title' => esc_html__( 'Right', 'powerful-lordicons-animation' ),
 						'icon'  => 'eicon-text-align-right',
 					),
 				),
@@ -276,14 +276,14 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_link_switcher',
 			array(
-				'label' => __( 'Link', 'powerful-lordicons-animation' ),
+				'label' => esc_html__( 'Link', 'powerful-lordicons-animation' ),
 				'type'  => Controls_Manager::SWITCHER,
 			)
 		);
 		$this->add_control(
 			'link',
 			array(
-				'label'       => __( 'Place URL', 'powerful-lordicons-animation' ),
+				'label'       => esc_html__( 'Place URL', 'powerful-lordicons-animation' ),
 				'type'        => Controls_Manager::URL,
 				'dynamic'     => array( 'active' => true ),
 				'default'     => array(
@@ -300,11 +300,11 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'plordiconsa_lordicons_renderer',
 			array(
-				'label'        => __( 'Render As', 'powerful-lordicons-animation' ),
+				'label'        => esc_html__( 'Render As', 'powerful-lordicons-animation' ),
 				'type'         => Controls_Manager::SELECT,
 				'options'      => array(
-					'svg'    => __( 'SVG', 'powerful-lordicons-animation' ),
-					'canvas' => __( 'Canvas', 'powerful-lordicons-animation' ),
+					'svg'    => esc_html__( 'SVG', 'powerful-lordicons-animation' ),
+					'canvas' => esc_html__( 'Canvas', 'powerful-lordicons-animation' ),
 				),
 				'default'      => 'svg',
 				'prefix_class' => 'plordiconsa-lordicons-',
