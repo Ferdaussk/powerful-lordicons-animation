@@ -55,7 +55,7 @@ class Classplordiconsaeffective {
 		);
 	}
 
-	//css-js-link-here
+	//css-js-link-here with php
 	public function plordiconsa_all_assets_for_the_public(){
 		wp_enqueue_style( 'plordiconsa-effective-style', plugin_dir_url( __FILE__ ) . 'assets/public/css/style.css', null, '1.0', 'all' );
 		wp_enqueue_script( 'plordiconsa-effective-lordicons', plugin_dir_url( __FILE__ ) . 'assets/public/js/lordicons.js', array('jquery'), '1.0', true );
