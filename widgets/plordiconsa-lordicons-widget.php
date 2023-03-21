@@ -53,7 +53,7 @@ class PLORDICONSA_Effective_widgets extends Widget_Base {
 				'type'        => Controls_Manager::TEXT,
 				'dynamic'     => array( 'active' => true ),
 				'default' 		=> 'https://cdn.lordicon.com/vixtkkbk.json',
-				'description' => 'Get URL/JSON file from <a href="https://lordicon.com/icons" target="_blank">here...!!</a>',
+				'description' => 'Get URL/JSON file from <a href="https://lordicon.com/icons" target="_blank">here...!!</a> Follow <a href="https://prnt.sc/G0sKSPQLyi78" target="_blank">here...!!!</a>',
 				'label_block' => true,
 				'condition'   => array(
 					'plordiconsa_source' => 'url',
